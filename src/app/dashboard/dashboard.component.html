@@ -1,0 +1,40 @@
+<body>
+    <mat-card>
+        <b><span>Dashboard</span></b>
+    </mat-card>
+    <br>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Hotels Number</h2>
+                    <h1 class="title">{{data?.hotel}}</h1>
+                    <p><button class="button" [routerLink]="['/hotel/hotel']">View Hotel</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Rooms Number</h2>
+                    <h1 class="title">{{data?.room}}</h1>
+                    <p><button class="button" [routerLink]="['/hotel/room']">View room</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+
+                <div class="container">
+                    <h2 class="title">Bills Number</h2>
+                    <h1 class="title">{{data?.bill}}</h1>
+                    <p><button class="button" [routerLink]="['/hotel/bill']">View Bill</button></p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
